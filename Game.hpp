@@ -1,5 +1,5 @@
-#ifndef Desk_HPP
-#define Desk_HPP
+#ifndef GAME_HPP
+#define GAME_HPP
+#include "Deck.hpp"
 
-
-#endif //Desk_HPP
+#endif //GAME_HPP

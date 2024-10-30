@@ -1,5 +1,7 @@
-#ifndef Desk_HPP
-#define Desk_HPP
+#ifndef TABLE_HPP
+#define TABLE_HPP
+#include "Card.hpp"
 
 
-#endif //Desk_HPP
+
+#endif //TABLE_HPP

@@ -1,5 +1,7 @@
-#ifndef Desk_HPP
-#define Desk_HPP
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+#include "Hand.hpp"
 
 
-#endif //Desk_HPP
+
+#endif //PLAYER_HPP

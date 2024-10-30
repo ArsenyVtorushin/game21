@@ -1,19 +1,23 @@
 #ifndef CARD_HPP
 #define CARD_HPP
+#include <iostream>
+#include <vector>
+#include <string>
 
-namespace CardGame {//пространство имен 
-	enum Suit {//набор целочисленных констант, перечисление
-		clubs= 0, diamonds = 1, hards = 2, spikes = 3//масти
-
-
+namespace CardGame 
+{
+	enum Suit //набор целочисленных констант, перечисление
+	{
+		clubs = 0, diamonds = 1, hearts = 2, spades = 3 // масти
 	};
 
-	enum Ranks {
+	enum Ranks 
+	{
 		two = 2,
 		three = 3,
 		four = 4,
 		five = 5,
-		sizx = 6,
+		six = 6,
 		seven = 7,
 		eigth = 8,
 		nine = 9,
@@ -24,25 +28,19 @@ namespace CardGame {//пространство имен
 		ace
 	};
 
-	class Card {
+	class Card 
+	{
 	public:
 		Card() = default;
-		Card(Ranks rank, Suit suit):value_(rank),suit_(suit){}
+		Card(Ranks rank, Suit suit) :value(rank),suit(suit) {}
 
 		Suit GetSuit()const;
 		Ranks getValue()const;
 
-
-
 	private:
-		Ranks value_;//значение
-		Suit suit_;//масть
-
-
+		Ranks value; // значение
+		Suit suit; // масть
 	};
-
-
 }
-
 
 #endif //CARD_HPP
